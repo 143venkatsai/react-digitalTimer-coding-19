@@ -1,0 +1,166 @@
+.timer-container {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px;
+}
+
+.main-heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.timer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  margin-right: 60px;
+  margin-left: -10%;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.time {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 35px;
+  color: #00d9f5;
+}
+
+.status {
+  margin-top: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.timer-controller-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.timer-control-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.image {
+  height: 40px;
+}
+
+.timer-control-label {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-left: 10px;
+}
+
+.timer-limit-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.text-label {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  color: #1e293b;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.operator {
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+  outline: none;
+}
+
+.minutes-container {
+  background-image: linear-gradient(to right, #74f296, #00d9f5);
+  padding: 6px 25px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .timer-container {
+    padding: 10px 20px;
+  }
+  .timer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-section {
+    height: 330px;
+    width: 330px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .timer {
+    width: 120px;
+    height: 120px;
+  }
+  .time {
+    font-size: 30px;
+  }
+
+  .timer-limit {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .timer-limit-controller {
+    margin-left: 0px;
+  }
+  .timer-control-button {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
